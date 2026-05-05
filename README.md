@@ -31,7 +31,7 @@ Formal methods catch logical inconsistencies that humans miss;
 humans catch contextual and ethical failures that formal systems can't express.
 Neither replaces the other.
 
-### Graph Neural Networks (GNNs)
+### Graph Neural Networks (GNNs) & Large Relational Models (LRMs)
 
 Learning on structured relational data — knowledge graphs, conversation graphs,
 entity networks that evolve over time.
@@ -39,6 +39,16 @@ Particularly interested in GNNs as the representation layer for personal memory:
 how do you model what you know, who you know, and how ideas connect
 across years of conversations?
 The knowledge graph is the long game beneath the transcript.
+
+LLMs emerged when transformer architectures were scaled on language.
+The analog for relational data is coming:
+**Large Relational Models (LRMs)** — foundation models trained at scale on graph-structured
+and relational data, capable of emergent relational reasoning the way LLMs exhibit emergent
+language reasoning.
+GNNs ([PyG](https://pyg.org/), [DGL](https://www.dgl.ai/)) are the architectural primitive;
+relational deep learning ([RelBench](https://relbench.stanford.edu/)) and graph foundation models
+are early signals of what scale will unlock.
+Where LLMs answer *what does this mean*, LRMs will answer *how does this connect*.
 
 ### Vibe-Coding Best Practices
 
