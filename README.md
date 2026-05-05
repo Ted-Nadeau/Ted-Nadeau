@@ -14,7 +14,22 @@ systems that extend human judgment rather than replace it.
 The most interesting near-term AI work is not automation — it's *augmentation*.
 The design principle: AI proposes, human decides.
 Candidates, not actions. Reviewable artifacts, not autonomous side effects.
-Building toward systems that make humans more capable, more informed, more themselves.
+
+LLMs are stochastic — they generate plausible outputs, not provably correct ones.
+The natural complement is **formal reasoning**:
+[SMT (Satisfiability Modulo Theories)](https://en.wikipedia.org/wiki/Satisfiability_modulo_theories)
+solvers — [z3](https://github.com/Z3Prover/z3), [cvc5](https://cvc5.github.io/),
+[pySMT](https://github.com/pysmt/pysmt) — are deterministic and complete.
+Given a set of constraints, they either find a satisfying assignment or prove none exists.
+Where an LLM approximates, a solver *verifies*.
+
+This suggests a layered architecture:
+the stochastic layer (LLM) generates candidates,
+the constraint layer (SMT / [Amazon Bedrock Guardrails](https://aws.amazon.com/bedrock/guardrails/)) validates them,
+and the human layer decides.
+Formal methods catch logical inconsistencies that humans miss;
+humans catch contextual and ethical failures that formal systems can't express.
+Neither replaces the other.
 
 ### Graph Neural Networks (GNNs)
 
