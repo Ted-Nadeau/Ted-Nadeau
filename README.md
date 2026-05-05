@@ -1,6 +1,6 @@
 # Ted Nadeau
 
-Platform architect with 25 years building enterprise software, now focused on ambient AI and personal knowledge systems."
+Platform architect with 25 years building enterprise software, now focused on ambient AI and personal knowledge systems.
 
 I'm drawn to problems where machines and humans reason *together* —
 systems that extend human judgment rather than replace it.
